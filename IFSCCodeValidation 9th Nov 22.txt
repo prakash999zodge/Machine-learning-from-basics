@@ -1,0 +1,18 @@
+
+--(ifsccode >= 'S' AND ifsccode >= 0)
+--((ifsccode>='s' AND ifsccode<='z') AND (ifsccode>=0))
+
+
+CREATE TABLE IFSCCodeTask (
+  ifsccode varchar(20), CHECK (ifsccode BETWEEN 'S0' AND 'ZZZZ9999999')
+);
+
+
+
+
+
+INSERT INTO IFSCCodeTask VALUES ('SS0000000');
+
+
+
+SELECT * FROM IFSCCodeTask;
