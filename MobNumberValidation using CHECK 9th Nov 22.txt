@@ -1,0 +1,10 @@
+
+CREATE TABLE MobNoTask (
+  mob_no varchar(20), CHECK (mob_no>=9000000000 AND mob_no<=9999999999)
+);
+
+
+INSERT INTO MobNoTask VALUES (9999548351);
+
+
+SELECT * FROM MobNoTask;

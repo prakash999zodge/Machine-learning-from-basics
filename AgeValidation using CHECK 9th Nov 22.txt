@@ -1,0 +1,12 @@
+
+CREATE TABLE AgeTask (
+  age INTEGER, CHECK ((age>=1 AND age<=10) OR (age>=20 AND age<=30))
+);
+
+
+
+
+
+INSERT INTO AgeTask VALUES ('22');
+
+SELECT * FROM AgeTask;

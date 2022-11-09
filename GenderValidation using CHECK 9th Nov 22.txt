@@ -1,0 +1,7 @@
+CREATE TABLE GenderTask (
+  gender varchar(20), CHECK (gender = 'M' OR gender = 'F')
+);
+
+INSERT INTO GenderTask VALUES ('f');
+
+SELECT * FROM GenderTask;
